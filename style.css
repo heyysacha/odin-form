@@ -1,0 +1,160 @@
+/* main body styling */
+
+* {
+    box-sizing: border-box;
+    --main-bg-color: #f8f6f6;
+    --text-color: #474747;
+    --transparent-black: rgb(0, 0, 0, 0.35);
+    --button-color: #527d49;
+}
+
+body {
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+#main-body {
+    border: solid;
+    display: flex;
+    height: 100vh;
+}
+
+#intro-text,
+#form-input,
+#button-area {
+    padding-left: 5%;
+    padding-right: 20%;
+}
+
+/* sidebar styling */
+
+#sidebar {
+    width: 40%;
+}
+
+#sidebar-img {
+    height: 100%;
+    width: 100%;
+}
+
+#sidebar-text {
+    position: relative;
+    bottom: 2.5rem;
+    text-align: center;
+}
+
+#caption, #caption a {
+    color: white;
+    font-size: .7rem;
+}
+
+#logo-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--transparent-black);
+    height: 8rem;
+    position: relative;
+    bottom: 80%;
+}
+
+#logo-text {
+    font-family: 'Kode Mono', sans-serif;
+    font-size: 5rem;
+    color: white;
+    opacity: 1;
+}
+
+#logo-img {
+    width: 80px;
+    opacity: 1;
+}
+
+/* main body styling */
+
+#form-area {
+    background-color:var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 80%;
+}
+
+#intro-text {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color)
+}
+
+/* form styling */
+
+#form-input {
+    background-color: white;
+    box-shadow: 0px 15px 10px -15px var(--transparent-black);
+    margin-bottom: 2%;
+    padding-bottom: 3%;
+}
+
+h2 {
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+label {
+    display: block;
+    text-transform: uppercase;
+    font-size: .6rem;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.form-blocks {
+    padding: 0px 70px 20px 0px;
+}
+
+input {
+    width: 15rem;
+    border: solid 1px rgb(128, 128, 128, 0.3);
+    border-radius: 5px;
+}
+
+input:active {
+    box-shadow: 1px 1px 5px 1px var(--transparent-black);
+    border: solid 1px #51A0D5;
+}
+
+/* button area styling */
+
+button {
+    padding: 10px 40px 10px 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--button-color);
+    color: white;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px 1px var(--transparent-black);
+    margin-top: 15px;
+}
+
+#button-area {
+    font-size: .9rem;
+}
+
+#button-area p {
+    padding-top: 20px;
+}
+
+#button-area a {
+    color: var(--button-color);
+    text-decoration: none;
+    font-weight: bold;
+}

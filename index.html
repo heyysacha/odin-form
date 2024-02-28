@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main-body">
+        <div id="sidebar">
+            <img src="images/plant.jpeg" alt="image of water droplets on green leaves" id="sidebar-img">
+            <div id="sidebar-text">
+                <p id="caption">Photo by <a
+                        href="https://unsplash.com/@liubovilchuk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Liubov
+                        Ilchuk</a> on <a
+                        href="https://unsplash.com/photos/water-drop-on-green-plant-_6rR_iP06p4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </p>
+            </div>
+            <div id="logo-banner">
+                <img src="images/odin-lined.png" alt="transparent logo for the odin project" id="logo-img">
+                <p id="logo-text">Odin</p>
+            </div>
+        </div>
+        <div id="form-area">
+            <div id="intro-text">
+                <p>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams. Sign up now to get started.</p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div id="form-input">
+                <h2>Let's do this!</h2>
+                <form>
+                    <fieldset>
+                        <div class="form-blocks">
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="first-name" id="first-name">
+                        </div>
+                        <div class="form-blocks">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                    
+                        <div class="form-blocks">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-blocks">
+                            <label for="phone-num">Phone Number</label>
+                            <input type="number" name="phone-num" id="phone-num">
+                        </div>
+                    </fieldset>
+                    <fieldset id="password-info">
+                        <div class="form-blocks">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <div class="form-blocks">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="confirm-password" name="confirm-password" id="confirm-password">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div id="button-area">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="http://">Log in</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
