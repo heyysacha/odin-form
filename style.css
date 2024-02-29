@@ -152,6 +152,7 @@ button {
 
 #button-area p {
     padding-top: 20px;
+    margin-bottom: 0;
 }
 
 #button-area a {
@@ -172,10 +173,11 @@ button {
 
 #password-msg.error {
     visibility: visible;
-    display:contents;
+    display: contents;
     color: var(--error-color);
     font-size: .7rem;
-    margin-top: 0;
+    margin: 0;
+    border: none;
 }
 
 
@@ -183,12 +185,16 @@ button {
 
 @media screen and (max-width: 700px) {
     
+    #main-body {
+        height: 110vh;
+    }
+    
     #sidebar {
-        width: 35%;
+        width: 40%;
     }
     
     #sidebar-img {
-        background-size: cover;
+        width: 100%;
     }
     
     #logo-text {
@@ -197,6 +203,14 @@ button {
     
     #logo-img {
         width: 40px;
+    }
+    
+    #form-area {
+        height: fit-content;
+    }
+    
+    #button-area {
+        padding-bottom: 4rem;
     }
     
    fieldset {
