@@ -6,6 +6,7 @@
     --text-color: #474747;
     --transparent-black: rgb(0, 0, 0, 0.35);
     --button-color: #527d49;
+    --error-color: rgb(198, 27, 27);
 }
 
 body {
@@ -34,7 +35,7 @@ body {
 
 #sidebar-img {
     height: 100%;
-    width: 100%;
+    width: auto;
 }
 
 #sidebar-text {
@@ -157,4 +158,48 @@ button {
     color: var(--button-color);
     text-decoration: none;
     font-weight: bold;
+}
+
+/* password validation */
+.error, .error:focus {
+    border: solid var(--error-color);
+}
+
+#password-msg {
+    visibility: hidden;
+    display: none;
+}
+
+#password-msg.error {
+    visibility: visible;
+    display:contents;
+    color: var(--error-color);
+    font-size: .7rem;
+    margin-top: 0;
+}
+
+
+/* setting styles for mobile */
+
+@media screen and (max-width: 700px) {
+    
+    #sidebar {
+        width: 35%;
+    }
+    
+    #sidebar-img {
+        background-size: cover;
+    }
+    
+    #logo-text {
+        font-size: 3rem;
+    }
+    
+    #logo-img {
+        width: 40px;
+    }
+    
+   fieldset {
+    flex-direction: column;
+   }
 }
